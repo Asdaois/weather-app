@@ -1,1 +1,1 @@
-console.log("hey");
+!async function(a=""){try{const o=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${a}&appid=fa1e5b4bc8756a5da47e2ed86ac26e74`,{mode:"cors"});console.log("clima");const e=await o.json();console.log(e)}catch(a){console.error(a)}}("San Felix");
