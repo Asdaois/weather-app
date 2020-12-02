@@ -3,41 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Wheater online</title>
   </head>
   <body>
-    <form id="formWeather">
-      <label for="city-name">
-        <span>City name</span>
-        <input type="text" name="city-name" id="city-name" />
-      </label>
-      <input type="button" value="Get city weather" id="btn-city" />
-      <input type="button" value="Get local weather" id="btn-local" />
-    </form>
-    <div class="weather-display">
+    <header>
+      <h1>Wheater today</h1>
+      <form id="formWeather">
+        <label for="city-name" id="label-city-name">
+          <div><span>City name</span></div>
+
+          <input type="text" name="city-name" id="city-name" />
+        </label>
+        <div>
+          <input type="button" value="Get city weather" id="btn-city" />
+          <input type="button" value="Get local weather" id="btn-local" />
+        </div>
+      </form>
+    </header>
+    <div id="weather-display">
       <div class="current-weather">
         <div id="main">
+          <!--
           <h2 id="zone">Ciudad guayana</h2>
-          <p id="hour">Martes, 8.00PM</p>
-          <p id="weather-actual">Mayormente ********</p>
+          -->
+          <p>
+            <span id="hour">Martes, 8.00PM</span><br />
+            <span id="weather-actual">Mayormente ********</span>
+          </p>
         </div>
         <div id="other">
           <div>
             <img src="#" alt="Reference image" />
-            <div>
-              <p id="current-temp">28</p>
-            </div>
           </div>
           <div>
             <p>
-              Prob de precipitacion:
+              Temperature<span id="current-temp">28</span>
+              <br />
+              Prob. of precipitation:
               <span id="rain-value">52</span>
+              <br />
+              Humidity:
+              <span id="humidity-value">3</span>
+              <br />
+              Wind: <span id="wind">3</span>
             </p>
-            <p>
-              humedad
-              <span id="humedad-value">3</span>
-            </p>
-            <p>Wind <span id="wind">3</span></p>
           </div>
         </div>
       </div>

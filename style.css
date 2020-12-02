@@ -1,0 +1,56 @@
+:root {
+  --header--background-color: #eee;
+}
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  height: 100%;
+}
+header {
+  background-color: var(--header--background-color);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
+}
+
+#formWeather {
+  display: flex;
+  padding: 4px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#formWeather div {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+#label-city-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 4px;
+}
+#label-city-name > div {
+  margin-right: 4px;
+}
+#weather-display {
+  opacity: 0%;
+  background-color: #eee;
+  margin: auto;
+  width: fit-content;
+  align-self: self;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
+}
+#other {
+  display: flex;
+  align-items: center;
+}
+.show {
+  opacity: 100% !important;
+}
