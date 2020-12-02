@@ -39,7 +39,6 @@ function createWeatherAPI() {
       // console.info(forecastDate);
 
       const filterForecast = await filterForecastData(forecastDate);
-      console.log(filterForecast);
       return filterForecast;
     } catch (error) {
       console.log(data);
